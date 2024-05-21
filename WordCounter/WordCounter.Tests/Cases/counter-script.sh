@@ -1,0 +1,1 @@
+grep -o '\S*' | sort | uniq -c | sort -b -k 2,2n -k 1,1r | awk '{ print $1 ": " $2 }'
