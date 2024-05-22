@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WordCounter.CSharp\WordCounter.CSharp.csproj" />
+    <ProjectReference Include="..\WordCounter.FSharp\WordCounter.FSharp.fsproj" />
   </ItemGroup>
 
   <ItemGroup>
