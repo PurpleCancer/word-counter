@@ -5,7 +5,7 @@ namespace WordCounter.Tests.Utils;
 
 public static class TestUtils
 {
-    public static (string input, IList<WordCount> output) LoadCase(string inputResourceName, string outputResourceName)
+    public static (string input, List<WordCount> output) LoadCase(string inputResourceName, string outputResourceName)
     {
         var input = TestResources.ResourceManager.GetString(inputResourceName);
         var rawOutput = TestResources.ResourceManager.GetString(outputResourceName);
@@ -19,7 +19,7 @@ public static class TestUtils
         return (input, ParseOutput(rawOutput));
     }
 
-    private static IList<WordCount> ParseOutput(string rawOutput)
+    private static List<WordCount> ParseOutput(string rawOutput)
     {
         return rawOutput
                 .Split('\n')

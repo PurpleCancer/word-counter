@@ -10,5 +10,5 @@ public interface IWordCounter
     /// </remarks>
     /// <param name="input">Input string.</param>
     /// <returns>Sorted list of words with their counts.</returns>
-    public IList<WordCount> CountAndSortWords(string input);
+    public IEnumerable<WordCount> CountAndSortWords(string input);
 }

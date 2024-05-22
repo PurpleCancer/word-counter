@@ -4,7 +4,7 @@ namespace WordCounter.CSharp;
 
 public class CSharpWordCounter : IWordCounter
 {
-    public IList<WordCount> CountAndSortWords(string input)
+    public IEnumerable<WordCount> CountAndSortWords(string input)
     {
         return input.Split()
             .Where(word => !string.IsNullOrWhiteSpace(word))
